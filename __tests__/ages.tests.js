@@ -17,5 +17,5 @@ describe('Ages', () => {
     expect(userGalacticAge.neptuneAge).toEqual(currentAge * 60195/365.3);
     expect(userGalacticAge.plutoAge).toEqual(currentAge * 90560/365.3);
     expect(userGalacticAge.erisAge).toEqual(currentAge * 204199/365.3);
-  })
-})
+  });
+});
