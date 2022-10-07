@@ -6,7 +6,7 @@ describe('Ages', () => {
     let currentDate = new Date;
     let userGalacticAge = new Ages(userBirthday, currentDate);
     let currentAge = (currentDate-userBirthday) / (1000 * 60 * 60 * 24 *365.25);
-    expect(userGalacticAge.earthAge).toEqual(currentAge);
+    expect(userGalacticAge.earthAge).toBeCloseTo (currentAge);
     expect(userGalacticAge.mercuryAge).toEqual(currentAge * 88/365.25);
     expect(userGalacticAge.venusAge).toEqual(currentAge * 224.7/365.25);
     expect(userGalacticAge.marsAge).toEqual(currentAge * 687/365.25);
