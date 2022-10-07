@@ -17,7 +17,7 @@ export default class Ages {
     this.birthday = userBirthday.toDateString();
     let ageMillisec = currentDate - userBirthday;
     this.ageInDays = millToDays(ageMillisec);
-    this.earthAge = (Math.round(this.ageInDays*100/365.25))/100
+    this.earthAge = (Math.round(this.ageInDays*100/earthYear))/100
     this.mercuryAge = (Math.round(this.ageInDays*100/mercuryYear))/100;
     this.venusAge = (Math.round(this.ageInDays*100/venusYear))/100;
     this.marsAge = (Math.round(this.ageInDays*100/marsYear))/100;
