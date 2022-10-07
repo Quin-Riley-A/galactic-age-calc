@@ -9,10 +9,10 @@ describe('Ages', () => {
     expect(userGalacticAge.earthAge).toBeCloseTo (currentAge);
     expect(userGalacticAge.mercuryAge).toBeCloseTo(currentAge * 365.25/87.97);
     expect(userGalacticAge.venusAge).toBeCloseTo(currentAge * 365.25/224.7);
-    expect(userGalacticAge.marsAge).toBeCloseTo(currentAge * 365.25/687);
+    expect(userGalacticAge.marsAge).toBeCloseTo(currentAge * 365.25/687.98);
     expect(userGalacticAge.ceresAge).toBeCloseTo(currentAge * 365.25/1680);
-    expect(userGalacticAge.jupiterAge).toBeCloseTo(currentAge * 365.25/4332.6);
-    expect(userGalacticAge.saturnAge).toBeCloseTo(currentAge * 365.25/24491);
+    expect(userGalacticAge.jupiterAge).toBeCloseTo(currentAge * 365.25/4332.59);
+    expect(userGalacticAge.saturnAge).toBeCloseTo(currentAge * 365.25/10759.22);
     expect(userGalacticAge.uranusAge).toBeCloseTo(currentAge * 365.25/30688.5);
     expect(userGalacticAge.neptuneAge).toBeCloseTo(currentAge * 365.25/60195);
     expect(userGalacticAge.plutoAge).toBeCloseTo(currentAge * 365.25/90560);
