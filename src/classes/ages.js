@@ -1,4 +1,4 @@
-import millToDays from './../utility/millToDays.js'
+import millToDays from './../utility/millToDays.js';
 
 const mercuryYear = 87.97;
 const venusYear = 224.7;
@@ -17,16 +17,17 @@ export default class Ages {
     this.birthday = userBirthday.toDateString();
     let ageMillisec = currentDate - userBirthday;
     this.ageInDays = millToDays(ageMillisec);
-    this.earthAge = (Math.round(this.ageInDays*100/earthYear))/100
-    this.mercuryAge = (Math.round(this.ageInDays*100/mercuryYear))/100;
-    this.venusAge = (Math.round(this.ageInDays*100/venusYear))/100;
-    this.marsAge = (Math.round(this.ageInDays*100/marsYear))/100;
-    this.ceresAge = (Math.round(this.ageInDays*100/ceresYear))/100;
-    this.jupiterAge = (Math.round(this.ageInDays*100/jupiterYear))/100;
-    this.saturnAge = (Math.round(this.ageInDays*100/saturnYear))/100;
-    this.uranusAge = (Math.round(this.ageInDays*100/uranusYear))/100;
-    this.neptuneAge = (Math.round(this.ageInDays*100/neptuneYear))/100;
-    this.plutoAge = (Math.round(this.ageInDays*100/plutoYear))/100;
-    this.erisAge = (Math.round(this.ageInDays*100/erisYear))/100;
+    this.earthAge = (Math.round(this.ageInDays*10000/earthYear))/10000
+    this.mercuryAge = (Math.round(this.ageInDays*10000/mercuryYear))/10000;
+    this.venusAge = (Math.round(this.ageInDays*10000/venusYear))/10000;
+    this.marsAge = (Math.round(this.ageInDays*10000/marsYear))/10000;
+    this.ceresAge = (Math.round(this.ageInDays*10000/ceresYear))/10000;
+    this.jupiterAge = (Math.round(this.ageInDays*10000/jupiterYear))/10000;
+    this.saturnAge = (Math.round(this.ageInDays*10000/saturnYear))/10000;
+    this.uranusAge = (Math.round(this.ageInDays*10000/uranusYear))/10000;
+    this.neptuneAge = (Math.round(this.ageInDays*10000/neptuneYear))/10000;
+    this.plutoAge = (Math.round(this.ageInDays*10000/plutoYear))/10000;
+    this.erisAge = (Math.round(this.ageInDays*10000/erisYear))/10000;
+    console.log(this.erisAge);
   }
 }
