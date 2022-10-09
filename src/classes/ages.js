@@ -20,8 +20,9 @@ export default class Ages {
   }
 
   lifeExpectCalc(lifeExpectancy) {
-    //this.estimatedExpiryDate = new Da
+    const birthMilli = Date.parse(this.birthday);
+    const expiryMilli = (birthMilli + lifeExpectancy);
+    this.estimatedExpiryDate = (new Date(expiryMilli)).toDateString();
     //const planetsStrArr = ['Mercury', 'Venus', 'Earth', 'Mars', 'Ceres', 'Jupiter', 'Saturn', 'Saturn', 'Uranus', 'Neptune', 'Pluto', 'Eris'];
-
   }
 }

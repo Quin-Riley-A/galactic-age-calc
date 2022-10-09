@@ -20,7 +20,7 @@ describe('Ages', () => {
   });
 });
 
-describe('lifeExpectCalc', () => {
+describe('Ages.prototype.lifeExpectCalc', () => {
   test('It should determine an estimated expiry date for the user based their birthday and life expectancy passed in as milliseconds', () => {
     let userBirthday = new Date(95, 0, 1);
     let currentDate = new Date;
