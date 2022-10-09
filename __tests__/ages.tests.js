@@ -19,3 +19,14 @@ describe('Ages', () => {
     expect(userGalacticAge.erisAge).toBeCloseTo(currentAge * 365.25/204199);
   });
 });
+
+describe('lifeExpectCalc', () => {
+  test('It should determine an estimated expiry date for the user based their birthday and life expectancy passed in as milliseconds', () => {
+    let userBirthday = new Date(95, 0, 1);
+    let currentDate = new Date;
+    const lifeExpectancy = 1*(1000*60*60*24*365);
+    let userGalacticAge = new Ages(userBirthday, currentDate);
+    userGalacticAge.lifeExpectCalc(lifeExpectancy);
+    expect(userGalacticAge.estimatedExpiryDate).toEqual((new Date(96, 0, 1)).toDateString());
+  });
+});

@@ -18,4 +18,10 @@ export default class Ages {
     this.plutoAge = ageAssign(9, this.ageInDays);
     this.erisAge = ageAssign(10, this.ageInDays);
   }
+
+  lifeExpectCalc(lifeExpectancy) {
+    //this.estimatedExpiryDate = new Da
+    //const planetsStrArr = ['Mercury', 'Venus', 'Earth', 'Mars', 'Ceres', 'Jupiter', 'Saturn', 'Saturn', 'Uranus', 'Neptune', 'Pluto', 'Eris'];
+
+  }
 }
