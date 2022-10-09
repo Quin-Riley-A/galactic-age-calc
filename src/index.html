@@ -4,10 +4,31 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="stylesheet" href = "css/bootstrap.css" type="text/css">
+  <link rel="stylesheet" href = "css/styles.css" type="text/css">
   <script src="./index.js"></script>
+  <title>Age Across the Planets</title>
 </head>
 <body>
-  
+  <h2>Welcome to the Interplanetary Age Calculator</h2>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <form>
+          <div class="form-row">
+            <div class="form-group">
+              <input class="form-control" type="text" aria-describedby="getInputHelp" placeholder="How old are you?">
+              <small id="getInputHelp" class="form-text text-muted">Please input your age, as a number, in (Earth) years.</small>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <button type="submit" class="btn btn-primary" id="inputAge">Submit</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div> 
 </body>
 </html>
