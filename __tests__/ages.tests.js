@@ -1,4 +1,4 @@
-import Ages from './../src/classes/ages.js'
+import Ages from './../src/classes/ages.js';
 
 describe('Ages', () => {
   test('It should construct an object of the Ages-class producing age-properties from a passed in date-object.', () => {
