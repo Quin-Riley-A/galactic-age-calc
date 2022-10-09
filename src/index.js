@@ -3,12 +3,6 @@ import 'bootstrap';
 import './../css/bootstrap.css';
 import './../css/styles.css';
 
-let date1 = new Date(2022, 9, 10);
-let date2 = new Date(2022, 9, 9);
-let age = new Ages(date2, date1);
-console.log(age);
-console.log(age.mercuryAge);
-
 window.addEventListener('load', winLoad);
 
 function winLoad() {
@@ -22,6 +16,15 @@ function userSubmit(event) {
   let userDateArr = document.getElementById('userDate').value.split('-');
   const userDate = new Date(userDateArr[0], userDateArr[1]-1, userDateArr[2]);
   const age1 = new Ages(userDate, currentDate);
-  console.log(age1);
-  console.log(currentDate);
+  displayPlanetAges();
+  console.log("current Age: " + age1);
+}
+
+function displayPlanetAges() {
+  let outputDiv = document.getElementById('outputDiv');
+  if (outputDiv !== null) {
+    while (outputDiv.firstChild) {
+      outputDiv.removeChild(outputDiv.firstChild);
+    }
+  }
 }
