@@ -40,6 +40,15 @@ function displayPlanetAges(age1) {
   birthdayPTag.innerText = "Your chosen birthdate is " + age1.birthday;
   outputDiv.append(birthdayPTag);
   const demisePTag = document.createElement('p');
-  demisePTag.innerText = "Based on your life expectancy, your estimated 'expiration date' is " + age1.estimatedExpiryDate;
+  demisePTag.innerText = "Based on your life  expectancy, your estimated 'expiration date' is " + age1.estimatedExpiryDate + ".";
+  const currentDay = (Date.parse((new Date()).toDateString()));
+  if (Date.parse(age1.estimatedExpiryDate) > currentDay) {
+    demisePTag.append(" You've still got some time left, so do enjoy it as best you can!");
+  } else if (Date.parse(age1.estimatedExpiryDate) === currentDay) {
+    demisePTag.append(" While this may seem like a dark prophecy, on this auspicious day, you're still trucking along.");
+  } else if (Date.parse(age1.estimatedExpiryDate) < currentDay) {
+    demisePTag.append("  At this point, you're exceeding expectations, you've lived " );
+  }
+  outputDiv.append(demisePTag);
   document.querySelector('body').append(outputDiv);
 }
